@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projects | Personal Patterns</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script>
+            // Set theme immediately before page renders to prevent flash
+            (function () {
+                const theme = localStorage.getItem("theme") || "light";
+                document.documentElement.setAttribute("data-theme", theme);
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container nav-inner">
+                <a href="index.html" class="nav-logo"
+                    >Portfolio | Personal Patterns</a
+                >
+                <div class="nav-actions">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Who I Am</a></li>
+                        <li><a href="interests.html">Interests</a></li>
+                        <li>
+                            <a href="projects.html" class="active">Projects</a>
+                        </li>
+                    </ul>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <svg
+                            class="theme-toggle-icon sun"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                            />
+                        </svg>
+                        <svg
+                            class="theme-toggle-icon moon"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                            />
+                        </svg>
+                    </button>
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <header class="page-header">
+                <div class="container">
+                    <h1 class="page-title fade-in">Projects</h1>
+                    <p class="page-description fade-in fade-in-delay-1">
+                        A selection of work across different disciplines and
+                        categories.
+                    </p>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="container">
+                    <div class="categories fade-in fade-in-delay-2">
+                        <button class="category-btn active" data-category="all">
+                            All
+                        </button>
+                        <button class="category-btn" data-category="various">
+                            Various
+                        </button>
+                        <button class="category-btn" data-category="building">
+                            Building & Construction
+                        </button>
+                        <button class="category-btn" data-category="realestate">
+                            Real Estate & Cities
+                        </button>
+                        <button class="category-btn" data-category="industrial">
+                            Industrial
+                        </button>
+                        <button class="category-btn" data-category="tech">
+                            Tech
+                        </button>
+                        <button class="category-btn" data-category="previous">
+                            Previous Portfolio
+                        </button>
+                    </div>
+
+                    <div class="projects-grid fade-in fade-in-delay-3">
+                        <!-- Various Projects -->
+                        <article class="project-card" data-category="various">
+                            <div class="project-image">
+                                <img
+                                    src="images/TurinStupinigi.jpg"
+                                    alt="Photography Series"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Various</span>
+                                <h3 class="project-title">
+                                    Photography Series
+                                </h3>
+                                <p class="project-description">
+                                    A collection of urban photography exploring
+                                    light and shadow in cityscapes.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Building & Construction Projects -->
+
+                        <article class="project-card" data-category="building">
+                            <div class="project-image">
+                                <img
+                                    src="images/jh.png"
+                                    alt="Hughes Insight App"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category"
+                                    >Building & Construction</span
+                                >
+                                <h3 class="project-title">
+                                    Hughes Insight - Site Survey App
+                                </h3>
+                                <p class="project-description">
+                                    Web application tailored for conducting site
+                                    surveys and generating comprehensive
+                                    reports. During a site visit or inspection,
+                                    this app allows you to record and organize
+                                    data efficiently, input notes, images, and
+                                    other relevant information. Once the survey
+                                    is complete, the app compiles all the data
+                                    into a professional PDF report, cutting
+                                    report compilation time and ensuring
+                                    consistent and detailed documentation.
+                                    <br /><br />
+                                    <strong>Technologies:</strong> Figma, HTML,
+                                    CSS & JS
+                                    <br />
+                                    <strong>Period:</strong> 09/2020 – 12/2020
+                                    <br /><br />
+                                    <a
+                                        href="https://almamarob.github.io/portfolio/attachments/Hughes'Insight.pdf"
+                                        target="_blank"
+                                        style="
+                                            color: var(--color-accent);
+                                            text-decoration: underline;
+                                        "
+                                    >
+                                        View Full Presentation →
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Real Estate & Cities Projects -->
+                        <article
+                            class="project-card"
+                            data-category="realestate"
+                        >
+                            <div class="project-image">Project Image</div>
+                            <div class="project-content">
+                                <span class="project-category"
+                                    >Real Estate & Cities</span
+                                >
+                                <h3 class="project-title">Urban Master Plan</h3>
+                                <p class="project-description">
+                                    Comprehensive planning strategy for a new
+                                    mixed-use neighborhood development.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article
+                            class="project-card"
+                            data-category="realestate"
+                        >
+                            <div class="project-image">Project Image</div>
+                            <div class="project-content">
+                                <span class="project-category"
+                                    >Real Estate & Cities</span
+                                >
+                                <h3 class="project-title">Market Analysis</h3>
+                                <p class="project-description">
+                                    In-depth study of emerging real estate
+                                    trends and investment opportunities.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article
+                            class="project-card"
+                            data-category="realestate"
+                        >
+                            <div class="project-image">Project Image</div>
+                            <div class="project-content">
+                                <span class="project-category"
+                                    >Real Estate & Cities</span
+                                >
+                                <h3 class="project-title">
+                                    Transit-Oriented Development
+                                </h3>
+                                <p class="project-description">
+                                    Planning framework for high-density
+                                    development around public transportation
+                                    hubs.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article
+                            class="project-card"
+                            data-category="realestate"
+                        >
+                            <div class="project-image">Project Image</div>
+                            <div class="project-content">
+                                <span class="project-category"
+                                    >Real Estate & Cities</span
+                                >
+                                <h3 class="project-title">
+                                    Waterfront Revitalization
+                                </h3>
+                                <p class="project-description">
+                                    Strategy for transforming an industrial
+                                    waterfront into a vibrant public space.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Industrial Projects -->
+
+                        <article
+                            class="project-card"
+                            data-category="industrial"
+                        >
+                            <div class="project-image">
+                                <img
+                                    src="images/3d.png"
+                                    alt="Treed Track App"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Industrial</span>
+                                <h3 class="project-title">
+                                    Treed Track - Inventory Management App
+                                </h3>
+                                <p class="project-description">
+                                    Mobile app for streamline inventory
+                                    management, minimizing data entry errors by
+                                    30%. The app automates inventory updates
+                                    after scanning product barcodes, keeping
+                                    track of stock levels and providing
+                                    real-time insights into inventory status.
+                                    <br /><br />
+                                    <strong>Technologies:</strong> Figma,
+                                    Flutter
+                                    <br />
+                                    <strong>Period:</strong> 01/2022 – 06/2022
+                                    <br /><br />
+                                    <a
+                                        href="https://almamarob.github.io/portfolio/attachments/Treed-Track.pdf"
+                                        target="_blank"
+                                        style="
+                                            color: var(--color-accent);
+                                            text-decoration: underline;
+                                        "
+                                    >
+                                        View Full Presentation →
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Tech Projects -->
+                        <article class="project-card" data-category="tech">
+                            <div class="project-image">
+                                <img
+                                    src="images/jhr.png"
+                                    alt="JetHR - Net Salary Calculator"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Tech</span>
+                                <h3 class="project-title">
+                                    JetHR - Net Salary Calculator
+                                </h3>
+                                <p class="project-description">
+                                    Web application that converts Gross Annual
+                                    Salary (RAL) into net salary, taking into
+                                    account Italian tax and social security
+                                    variables. This process describes the logic
+                                    used for accurate salary projections,
+                                    considering all fiscal and welfare
+                                    deductions.
+                                    <br /><br />
+                                    <strong>Technologies:</strong> HTML, CSS,
+                                    JavaScript, Figma
+                                    <br />
+                                    <strong>Period:</strong> January 2025
+                                    <br /><br />
+                                    <a
+                                        href="https://almamarob.github.io/JetHR/"
+                                        target="_blank"
+                                        style="
+                                            color: var(--color-accent);
+                                            text-decoration: underline;
+                                        "
+                                    >
+                                        View Live Project →
+                                    </a>
+                                    <br />
+                                    <a
+                                        href="https://www.figma.com/board/tD2iO8tj9tLUUWbr84ZJ7B/JetHR--Proiezione-Retribuzione-Netta?node-id=2005-709&p=f&t=6U76tiojvSZBKOJM-0"
+                                        target="_blank"
+                                        style="
+                                            color: var(--color-accent);
+                                            text-decoration: underline;
+                                        "
+                                    >
+                                        View Process Documentation →
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Previous Portfolio -->
+                        <article class="project-card" data-category="previous">
+                            <div class="project-image">
+                                <img
+                                    src="images/portfoliop.png"
+                                    alt="ALMA'S HOME Portfolio"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category"
+                                    >Previous Portfolio</span
+                                >
+                                <h3 class="project-title">
+                                    ALMA'S HOME: A Journey Through the
+                                    Kaleidoscope
+                                </h3>
+                                <p class="project-description">
+                                    Personal portfolio, showcasing a virtual
+                                    house, where each room represents an
+                                    important aspect of my life and passions,
+                                    allowing you to better understand who I am
+                                    and what drives me. An interactive
+                                    exploration through different spaces that
+                                    tell my story.
+                                    <br /><br />
+                                    <strong>Technologies:</strong> HTML, CSS,
+                                    JavaScript, Figma
+                                    <br />
+                                    <strong>Period:</strong> January 2024
+                                    <br /><br />
+                                    <a
+                                        href="https://almamarob.github.io/portfolio/"
+                                        target="_blank"
+                                        style="
+                                            color: var(--color-accent);
+                                            text-decoration: underline;
+                                        "
+                                    >
+                                        View Previous Portfolio →
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Personal Patterns. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

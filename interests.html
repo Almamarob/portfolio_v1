@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interests | Personal Patterns</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script>
+            // Set theme immediately before page renders to prevent flash
+            (function () {
+                const theme = localStorage.getItem("theme") || "light";
+                document.documentElement.setAttribute("data-theme", theme);
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container nav-inner">
+                <a href="index.html" class="nav-logo"
+                    >Portfolio | Personal Patterns</a
+                >
+                <div class="nav-actions">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Who I Am</a></li>
+                        <li>
+                            <a href="interests.html" class="active"
+                                >Interests</a
+                            >
+                        </li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <svg
+                            class="theme-toggle-icon sun"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                            />
+                        </svg>
+                        <svg
+                            class="theme-toggle-icon moon"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                            />
+                        </svg>
+                    </button>
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <header class="page-header">
+                <div class="container">
+                    <h1 class="page-title fade-in">What I'm Interested In</h1>
+                    <p class="page-description fade-in fade-in-delay-1">
+                        The topics and fields that inspire and drive my work.
+                    </p>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title fade-in">
+                        Professional Interests
+                    </h2>
+                    <div class="content-grid fade-in fade-in-delay-1">
+                        <div class="card">
+                            <h3 class="card-title">Sustainable Architecture</h3>
+                            <p class="card-text">
+                                Exploring how buildings can minimize
+                                environmental impact while maximizing human
+                                comfort and well-being.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Urban Development</h3>
+                            <p class="card-text">
+                                Understanding how cities evolve and how
+                                thoughtful planning can create more livable,
+                                equitable communities.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Real Estate Markets</h3>
+                            <p class="card-text">
+                                Analyzing market trends and understanding the
+                                economic forces that shape our built
+                                environment.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Construction Technology</h3>
+                            <p class="card-text">
+                                Following innovations in building materials,
+                                methods, and technologies that are transforming
+                                the industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" style="padding-top: 0">
+                <div class="container">
+                    <h2 class="section-title fade-in">Personal Interests</h2>
+                    <div class="interests-list fade-in fade-in-delay-1">
+                        <span class="interest-tag">Photography</span>
+                        <span class="interest-tag">Travel</span>
+                        <span class="interest-tag">History</span>
+                        <span class="interest-tag">Art & Design</span>
+                        <span class="interest-tag">Technology</span>
+                        <span class="interest-tag">Reading</span>
+                        <span class="interest-tag">Hiking</span>
+                        <span class="interest-tag">Film</span>
+                        <span class="interest-tag">Music</span>
+                        <span class="interest-tag">Writing</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" style="padding-top: 0">
+                <div class="container">
+                    <h2 class="section-title fade-in">Current Focus</h2>
+                    <div class="content-grid fade-in fade-in-delay-1">
+                        <div class="card">
+                            <h3 class="card-title">Smart Cities</h3>
+                            <p class="card-text">
+                                How technology integration can improve urban
+                                living and create more efficient, responsive
+                                environments.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Adaptive Reuse</h3>
+                            <p class="card-text">
+                                The transformation of existing structures for
+                                new purposes, preserving history while meeting
+                                modern needs.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Real Estate Development</h3>
+                            <p class="card-text">
+                                Strategic planning and investment in property
+                                development, analyzing market trends and
+                                maximizing value creation.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Building Construction</h3>
+                            <p class="card-text">
+                                Modern construction techniques, materials
+                                innovation, and efficient project delivery from
+                                concept to completion.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Product Management</h3>
+                            <p class="card-text">
+                                Bridging user needs with business goals, driving
+                                product strategy and delivering solutions that
+                                create impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Personal Patterns. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
