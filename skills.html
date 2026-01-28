@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Skills & Expertise | Personal Patterns</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script>
+            // Set theme immediately before page renders to prevent flash
+            (function () {
+                const theme = localStorage.getItem("theme") || "light";
+                document.documentElement.setAttribute("data-theme", theme);
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container nav-inner">
+                <a href="index.html" class="nav-logo"
+                    >Portfolio | Personal Patterns</a
+                >
+                <div class="nav-actions">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Who I Am</a></li>
+                        <li><a href="skills.html" class="active">Skills & Expertise</a></li>
+                        <li><a href="interests.html">Interests</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <svg
+                            class="theme-toggle-icon sun"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                            />
+                        </svg>
+                        <svg
+                            class="theme-toggle-icon moon"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                            />
+                        </svg>
+                    </button>
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <header class="page-header">
+                <div class="container">
+                    <h1 class="page-title fade-in">Skills & Expertise</h1>
+                    <p class="page-description fade-in fade-in-delay-1">
+                        A comprehensive overview of my technical and domain expertise
+                    </p>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="container">
+                    <div class="skills-content fade-in fade-in-delay-2">
+                        <!-- Product Management -->
+                        <div class="skill-category">
+                            <h2>Product Management</h2>
+                            <div class="skill-grid">
+                                <div class="skill-item">
+                                    <h3>Product Strategy</h3>
+                                    <p>Defining product vision, roadmaps, and go-to-market strategies aligned with business objectives and user needs.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>User Research & Analytics</h3>
+                                    <p>Conducting user interviews, surveys, and data analysis to drive product decisions and measure success.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Agile & Scrum</h3>
+                                    <p>Leading cross-functional teams through sprint planning, backlog refinement, and iterative development cycles.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Stakeholder Management</h3>
+                                    <p>Translating technical complexity into clear communication for executives, developers, and end users.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Skills -->
+                        <div class="skill-category">
+                            <h2>Technical Skills</h2>
+                            <div class="skill-grid">
+                                <div class="skill-item">
+                                    <h3>Programming & Scripting</h3>
+                                    <p>Python, SQL, JavaScript, HTML/CSS for data analysis, automation, and prototyping.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Data Analysis & BI Tools</h3>
+                                    <p>SQL, Excel, Tableau, Power BI for extracting insights and creating dashboards.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Design & Prototyping</h3>
+                                    <p>Figma, Adobe Creative Suite for wireframing, UI design, and rapid prototyping.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>APIs & Integration</h3>
+                                    <p>Understanding RESTful APIs, webhooks, and system integrations for seamless product experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Domain Expertise -->
+                        <div class="skill-category">
+                            <h2>Domain Expertise</h2>
+                            <div class="skill-grid">
+                                <div class="skill-item">
+                                    <h3>Built Environment & BIM</h3>
+                                    <p>Deep knowledge of construction processes, building information modeling, and digital twins for asset management.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Real Estate Tech</h3>
+                                    <p>Understanding PropTech solutions, facility management systems, and smart building technologies.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Regulatory Compliance</h3>
+                                    <p>Experience with building codes, fire safety regulations, and industry standards (ISO, UNI).</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Sustainability & ESG</h3>
+                                    <p>Knowledge of green building certifications, energy efficiency, and sustainable urban development.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Soft Skills -->
+                        <div class="skill-category">
+                            <h2>Soft Skills</h2>
+                            <div class="skill-grid">
+                                <div class="skill-item">
+                                    <h3>Radical Candor</h3>
+                                    <p>Transparent, direct communication that balances care for people with challenge to drive results.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Systems Thinking</h3>
+                                    <p>Designing virtuous cycles and self-sustaining processes that minimize waste and maximize value.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Problem Solving</h3>
+                                    <p>Breaking down complex challenges into actionable steps with an analytical, engineering mindset.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h3>Continuous Learning</h3>
+                                    <p>Staying current with emerging technologies, industry trends, and best practices through ongoing education.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Technologies -->
+                        <div class="skill-category">
+                            <h2>Tools & Technologies</h2>
+                            <div class="tools-list">
+                                <span class="tool-tag">Jira</span>
+                                <span class="tool-tag">Confluence</span>
+                                <span class="tool-tag">Figma</span>
+                                <span class="tool-tag">Miro</span>
+                                <span class="tool-tag">Notion</span>
+                                <span class="tool-tag">SQL</span>
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">Git</span>
+                                <span class="tool-tag">Tableau</span>
+                                <span class="tool-tag">Power BI</span>
+                                <span class="tool-tag">Google Analytics</span>
+                                <span class="tool-tag">Mixpanel</span>
+                                <span class="tool-tag">Revit</span>
+                                <span class="tool-tag">AutoCAD</span>
+                                <span class="tool-tag">Pyrosim</span>
+                                <span class="tool-tag">Adobe Creative Suite</span>
+                            </div>
+                        </div>
+
+                        <!-- Languages -->
+                        <div class="skill-category">
+                            <h2>Languages</h2>
+                            <div class="languages-list">
+                                <div class="language-item">
+                                    <h3>Italian</h3>
+                                    <p>Native</p>
+                                </div>
+                                <div class="language-item">
+                                    <h3>English</h3>
+                                    <p>Fluent (C1)</p>
+                                </div>
+                                <div class="language-item">
+                                    <h3>Spanish</h3>
+                                    <p>Intermediate (B1)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Personal Patterns. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
